@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
-def call(String user) {
-  sh "sudo su -c 'whoami' -s /bin/sh ${user}"
+def call(String execute) {
+  sh "sudo su -c 'phing ${execute}' -s /bin/sh symphony"
 }
