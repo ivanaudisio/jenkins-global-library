@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
 def call() {
-  sh "sudo rm -fR $WORKSPACE/*"
+  sh "sudo rm -fR $WORKSPACE"
 }
