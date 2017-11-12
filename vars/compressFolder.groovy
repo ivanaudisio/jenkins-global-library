@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(String folderPath) {
-  sh "tar -cvzf ${folderPath}.tar.gz ${folderPath}"
-  sh "rm -fR ${folderPath}"
+def call(String folderName) {
+  sh "tar -cvzf ${folderName}.tar.gz ${folderName}"
+  sh "rm -fR ${folderName}"
 }
