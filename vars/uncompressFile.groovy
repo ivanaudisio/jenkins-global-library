@@ -2,5 +2,5 @@
 
 def call(String fileName) {
   sh "tar -xvzf ${fileName}.tar.gz ${fileName}"
-  // sh "rm -fR ${fileName}"
+  sh "rm -fR ${fileName}.tar.gz"
 }
